@@ -1,0 +1,21 @@
+{
+  "name": "Node-Express-Boiler-Plate",
+  "version": "1.0.0",
+  "description": "Boiler plate code for starting a quick node/express project ",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "JoshyB",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
