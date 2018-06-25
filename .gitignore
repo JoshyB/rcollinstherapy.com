@@ -1,6 +1,6 @@
 node_modules/
-package2.json
 .env
 .env.now
 .DS_Store
 *.log
+webpack.config.js
