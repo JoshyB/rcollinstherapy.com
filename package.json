@@ -11,9 +11,14 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-optipng": "^5.2.1",
     "pug": "^2.0.3"
   },
   "devDependencies": {
+    "file-loader": "^1.1.11",
+    "imagemin": "^5.3.1",
+    "img-loader": "^3.0.0",
     "nodemon": "^1.17.5",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4"

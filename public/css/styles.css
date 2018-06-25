@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab');
+
+:root {
+  --aqua: #6bbaa7;
+  --button-color: #60a796;
+  --sunshine: #fba100;
+  --lavender: #6c648b;
+  --dustyrose: #b6a19e;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -5,12 +14,15 @@
 
 html {
   font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
+  background-color: var(--lavender);
+  overflow-x: hidden;
 }
 
 p {
@@ -20,5 +32,395 @@ p {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-family: 'Josefin Slab', serif;
+}
+
+/* ******************* Navigation styling ***************************** */
+
+.navigation {
+  width: 100%;
+  position: relative;
+  height: 550px;
+}
+
+/* ********************** Various hero images for each page/route ********************************* */
+
+.navigation__bg1 {
+  background: url("../images/concentric_plant.jpeg") center center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.navigation__bg2 {
+  background: url("../images/fern.jpeg") center center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+
+.navigation__bg3 {
+  background: url("../images/succulent.jpg") center center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+/*
+.navigation__bg3{
+  background: url("../images/concentric_plant.jpeg") center center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.navigation__bg4 {
+  background: url("../images/concentric_plant.jpeg") center center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+
+.navigation__bg5 {
+  background: url("../images/concentric_plant.jpeg") center center;
+  background-size: cover;
+  height: 520px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+} */ 
+
+.navigation__top__bar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.navigation__logo a img {
+  width: 100px;
+  border: 1px solid #fff;
+}
+
+.navigation__menu ul{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ align-items: center;
+}
+
+.navigation__menu ul li {
+  list-style: none;
+}
+
+.navigation__menu ul li a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navigation__menu ul li a:hover {
+  color: #ccc;
+}
+
+.mobile__navigation {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--dustyrose);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.mobile__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 70px;
+  position: relative;
+}
+
+.mobile__menu a {
+  padding: 15px;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.mobile__menu a:hover {
+  color: #ddd;
+}
+
+.open__button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: none;
+}
+
+.open__button img {
+  height: 32px;
+  width: 32px;
+}
+.mobile__menu .close__button {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: 400;
+  top: 0;
+  left: 70%;
+}
+
+.name {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.name h1 {
+  font-size: 7rem;
+  color: white;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+
+/* ******************** button styling ************************************* */
+
+.button {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background:var(--button-color);
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  color: #fff;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  border-radius: .2rem;
+}
+
+.button:hover {
+  color: #ddd;
+}
+
+.mobile__button {
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  background-color: var(--aqua);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+/* ******************* main content styling for area below hero image and navigation ******************************* */
+
+.main-content {
+  width: 100%;
+  padding: 100px;
+}
+
+/* ****************** home page styling ******************** */
+
+.quote {
+ width: inherit;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+}
+
+.quote p {
+  max-width: 40em;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.quote span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* ******************** about page styling ***************************** */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.rebecca__portrait {
+  width: 500px;
+  flex-shrink: 0;
+}
+
+.rebecca__portrait img {
+  width: 500px;
+}
+
+.about__text {
+  width: 40em;
+  margin: 0 auto;
+}
+.about__text h5 {
+  color: #fff;
+}
+.about__text p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 5px;
+  padding: 0;
+  
+}
+
+
+/* ********************* location page styling ************************** */
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.office__details {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.office__image img{
+  width: 500px;
+  /* flex: 1; */
+}
+
+.location__details {
+  /* width: 100%; */
+}
+#map {
+  height: 400px;
+  overflow: visible;
+  margin: 100px auto 20px auto;
+}
+
+/* ***************** animations *************************** */
+
+@-webkit-keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ****************** responsive stuff ******************************* */
+
+@media(max-width: 1024px) {
+
+  .navigation__menu {
+    display: none;
+  }
+
+  .open__button {
+    display: block;
+  }
+
+  .name h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 568px) {
+
+  .name h1 {
+    font-size: 4rem;
+  }
+
+
+}
+
+@media(max-width: 414px) {
+
+  .name h1 {
+    font-size: 3rem;
+  }
+
+  
 }
 

@@ -4,12 +4,48 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Title 
-    link(rel="stylesheet", href="./dist/css/styles.css")
+    title Rebecca Collins, LISW
+    link(rel="stylesheet", href="./css/styles.css")
 
   body
-    h1 #{ title }
+    nav.navigation(class=bg__imageClass)
 
-    block content
+      .navigation__top__bar
 
-    script(src="")
+        .navigation__logo
+          a(href="/")
+            img(src="./images/spiral.jpg", alt="spiral mosaic art work")
+
+        .navigation__menu
+          ul
+            li
+              a(href="/aboutPage") about me
+            li
+              a(href="#") services
+            li
+              a(href="/location") location
+            li
+              a(href="#") forms
+            li
+              a.button(href="#") contact me
+        a.open__button(href="#")
+          img(src="./images/icons/open_icon.svg", alt="")
+
+      section.name
+        h1 #{ title }
+                
+    nav.mobile__navigation
+      .mobile__menu
+        a.close__button(href="#") &times;
+        a(href="/aboutPage") about me
+        a(href="#") services
+        a(href="/location") location
+        a(href="#") forms
+        a.mobile__button(href="#") contact me
+      
+    section.main-content
+      block content
+
+    block scripts
+      script(src="./js/main.js")
+      script(async defer src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&callback=makeMap`)
