@@ -4,7 +4,8 @@
   "description": "Boiler plate code for starting a quick node/express project ",
   "main": "app.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "app.js"
   },
   "author": "JoshyB",
   "license": "ISC",
