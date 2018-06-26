@@ -35,9 +35,21 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
   font-family: 'Josefin Slab', serif;
+}
+
+/* ************ some text styling *************** */
+
+.title__text {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle__text {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* ******************* Navigation styling ***************************** */
@@ -140,7 +152,9 @@ h1, h2, h3, h4, h5, h6 {
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
- align-items: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
 }
 
 .navigation__menu ul li {
@@ -239,6 +253,10 @@ h1, h2, h3, h4, h5, h6 {
           animation-duration: 2.5s;
 }
 
+.name img {
+  color: #fff;
+}
+
 
 /* ******************** button styling ************************************* */
 
@@ -281,14 +299,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ******************* main content styling for area below hero image and navigation ******************************* */
 
-.main-content {
+.main__content {
   width: 100%;
-  padding: 100px;
 }
 
 /* ****************** home page styling ******************** */
 
 .quote {
+ height: inherit;
  width: inherit;
  display: -webkit-box;
  display: -ms-flexbox;
@@ -303,6 +321,11 @@ h1, h2, h3, h4, h5, h6 {
  -webkit-box-align: center;
      -ms-flex-align: center;
          align-items: center;
+         margin: 100px auto;
+         background-image: url(/images/icons/quotes.svg);
+         background-position: center center;
+         background-size: 300px 300px;
+         background-repeat: no-repeat;
 }
 
 .quote p {
@@ -318,63 +341,59 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ******************** about page styling ***************************** */
 
-.about {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.rebecca__portrait {
-  width: 500px;
-  flex-shrink: 0;
-}
-
-.rebecca__portrait img {
-  width: 500px;
-}
-
-.about__text {
-  width: 40em;
-  margin: 0 auto;
-}
-.about__text h5 {
-  color: #fff;
-}
-.about__text p {
-  color: #fff;
-  font-size: 1.8rem;
-  margin: 5px;
-  padding: 0;
-  
-}
 
 
 /* ********************* location page styling ************************** */
 
 .location {
+  width: 100%;
+  padding: 100px 20px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.office__details {
-  color: #fff;
-  margin: 0 auto;
+.office__picture {
+  flex: 1 0 33%;
+  width: 300px;
 }
 
-.office__image img{
-  width: 500px;
-  /* flex: 1; */
+.office__picture > img {
+  width: 100%;
 }
 
 .location__details {
-  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  /* flex: 1 0 66%; */
+  flex-wrap: wrap;
 }
+
+.location__details > div {
+  flex: 1 0 22%;
+  color: #fff;
+  margin: 0 2rem;
+}
+
+.location__details > div > p > span {
+  margin-right: 10px;
+}
+
+.location__map {
+  margin-bottom: 100px;
+}
+
+.contact .button {
+  margin-top: 20px;
+}
+
 #map {
   height: 400px;
   overflow: visible;
-  margin: 100px auto 20px auto;
+  margin-bottom: 10px;
+}
+
+.location__map > .button {
+  margin-left: 2rem;
 }
 
 /* ***************** animations *************************** */
@@ -404,6 +423,16 @@ h1, h2, h3, h4, h5, h6 {
   .name h1 {
     font-size: 5rem;
   }
+
+  .location {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .office__picture {
+    width: 90%;
+    margin-bottom: 50px;
+  }
 }
 
 @media(max-width: 568px) {
@@ -412,6 +441,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4rem;
   }
 
+  .location__details {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .location__details > div {
+    margin: 10px;
+  }
 
 }
 

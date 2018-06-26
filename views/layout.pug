@@ -30,10 +30,14 @@ html(lang="en")
               a.button(href="#") contact me
         a.open__button(href="#")
           img(src="./images/icons/open_icon.svg", alt="")
-
+          //- using some js to either display a string or image
+  
       section.name
-        h1 #{ title }
-                
+        if title
+          h1 #{ title }
+        else
+          img(src=titleIcon, alt="")
+
     nav.mobile__navigation
       .mobile__menu
         a.close__button(href="#") &times;
@@ -43,7 +47,7 @@ html(lang="en")
         a(href="#") forms
         a.mobile__button(href="#") contact me
       
-    section.main-content
+    section.main__content
       block content
 
     block scripts

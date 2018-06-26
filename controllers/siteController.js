@@ -8,7 +8,7 @@ exports.aboutPage = (req, res) => {
 }
 
 exports.locationPage =  (req, res) => {
-  res.render('location', { title: 'Location', bg__imageClass: "navigation__bg3" })
+  res.render('location', { titleIcon: "./images/icons/map.svg", bg__imageClass: "navigation__bg3" })
 }
 
 

@@ -2,21 +2,33 @@ extends layout
 
 block content
   section.location
-    .office__image
-      img(src="./images/officePic.jpg", alt="Rebecca's office. With comfortable seating and lots of plants")
-    .office__details
+    .office__picture
+      img(src="./images/officePic.jpg", alt="A cozy office with amber lighting and lots of plants")
+    .location__details
       .address
-        h5 Address
-        p 4041 N. High Street 
-        p Suite 203E 
-        p Columbus OH 43214 United States 
+        p.title__text
+          span
+            svg(width="22px", height="22px")
+              use(xlink:href="./images/icons/pin.svg#pinIcon") 
+          | Address      
+        p.subtitle__text 4041 N. High Street 
+        p.subtitle__text Suite 203E 
+        p.subtitle__text Columbus OH 43214 United States 
       .hours
-       h5 Hours of Operation
-       p 11:00am - 6:00pm Monday - Thursday
-      .Phone
-        p 614 - 725 - 1165
-      .contact__me
+        p.title__text
+          span
+            svg(width="22px", height="22px")
+              use(xlink:href="./images/icons/clock.svg#clockIcon") 
+          | Hours
+        p.subtitle__text 11:00am - 6:00pm Monday - Thursday
+      .contact
+        p.title__text
+          span
+            svg(width="22px", height="22px")
+              use(xlink:href="./images/icons/phone.svg#phoneIcon") 
+          | Contact      
+        p.subtitle__text 614 - 725 - 1165
         a.button(href="#") Contact Me
-  section.location__details 
+  section.location__map
     #map
     a.button(href="https://www.google.com/maps/dir//4041+N+High+St+%23203E,+Columbus,+OH+43214/@40.0445989,-83.0219614,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88388c43861a9695:0x287ea00a6a35793e!2m2!1d-83.0197727!2d40.0445989") Need directions?
