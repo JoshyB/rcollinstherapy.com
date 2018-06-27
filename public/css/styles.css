@@ -6,6 +6,7 @@
   --sunshine: #fba100;
   --lavender: #6c648b;
   --dustyrose: #b6a19e;
+  --purple: #8c3593;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -341,7 +342,33 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ******************** about page styling ***************************** */
 
+.about {
+  display: flex;
+  padding: 100px 20px;
+  justify-content: space-around;
+}
 
+.rebecca__portrait {
+  flex: 1 0 50%;
+  max-width: 600px;
+}
+
+.rebecca__portrait img {
+  width: 100%;
+}
+
+.about__rebecca {
+  flex: 1 0 50%;
+}
+
+.about__text {
+  color: #fff;
+  margin: 0 2rem;
+}
+
+.about__text span {
+  color: var(--purple);
+}
 
 /* ********************* location page styling ************************** */
 
@@ -364,7 +391,6 @@ h1, h2, h3, h4, h5, h6 {
 .location__details {
   display: flex;
   justify-content: center;
-  /* flex: 1 0 66%; */
   flex-wrap: wrap;
 }
 
@@ -433,6 +459,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 90%;
     margin-bottom: 50px;
   }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .rebecca__portrait {}
 }
 
 @media(max-width: 568px) {
