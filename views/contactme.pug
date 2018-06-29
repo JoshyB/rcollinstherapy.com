@@ -1,0 +1,16 @@
+extends layout
+
+include mixins/_contactForm.pug
+
+block content
+  section.contact
+    .contact__info 
+      p.title__text 
+        span Rebecca Collins,
+        | LISW
+      p.subtitle__text
+        span
+          svg(width="22px", height="22px")
+              use(xlink:href="./images/icons/phone.svg#phoneIcon")
+        |614 - 725 - 1165
+    +contactForm()
