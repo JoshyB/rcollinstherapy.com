@@ -497,6 +497,14 @@ h6 {
   margin-right: 10px;
 }
 
+.contact__info > .hours {
+  margin-top: 1rem;
+}
+
+.contact__info > .hours > p > span{ 
+  margin-right: 1rem;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,7 +552,7 @@ input::placeholder {
 
 .send__button {
   text-align: right;
-  padding: 12px 0 0;
+  margin-top: 20px;
 }
 
 /* ******************* forms donwload page styling ************************* */
