@@ -1,3 +1,5 @@
+const mail = require("../handlers/mail");
+
 exports.homePage = (req, res) => {
   res.render("home", {
     title: "Rebecca Collins, LISW",
@@ -21,23 +23,34 @@ exports.locationPage = (req, res) => {
 
 exports.contactMe = (req, res) => {
   res.render("contactme", {
-    title: "contact page",
+    titleIcon: "./images/icons/message.svg",
     bg__imageClass: "navigation__bg4"
   });
 };
 
 exports.formDownloads = (req, res) => {
   res.render("forms", {
-    title: "Forms here!",
+    titleIcon: "./images/icons/forms.svg",
     bg__imageClass: "navigation__bg5"
   });
 };
 
+exports.services = (req, res) => {
+  res.render('services', {
+    title: "services",
+    bg__imageClass: "navigation__bg6"
+  })
+}
+
 exports.sendMail = async (req, res) => {
-  res.json({
-    firstname: req.body.firstName,
-    lastname: req.body.lastName,
+  const msg = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
     email: req.body.email,
-    msg: req.body.msg
-  });
+    message: req.body.msg
+  };
+
+  await mail.sendMail(msg);
+  // req.flash('success', "Thank you, your email was sent");
+  res.redirect('/contactMe');
 };

@@ -8,6 +8,7 @@ router.get('/aboutPage', siteController.aboutPage);
 router.get('/location', siteController.locationPage);
 router.get('/contactMe', siteController.contactMe);
 router.get('/formDownloads', siteController.formDownloads);
+router.get('/services', siteController.services);
 
 //contact form post request
 router.post('/sendMail', siteController.sendMail);
