@@ -509,7 +509,7 @@ h6 {
   margin-top: 1rem;
 }
 
-.contact__info > .hours > p > span{ 
+.contact__info > .hours > p > span {
   margin-right: 1rem;
 }
 
@@ -612,7 +612,7 @@ input::placeholder {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 100px 0;   
+  padding: 100px 0;
 }
 
 .rates__container,
@@ -621,9 +621,9 @@ input::placeholder {
 .issues__container,
 .mental__health__container,
 .sexuality__container {
- width: 80%;
- margin: 40px auto;
- word-break: break-word;
+  width: 80%;
+  margin: 40px auto;
+  word-break: break-word;
 }
 
 .text__column {
@@ -659,6 +659,48 @@ de-in {
     opacity: 1;
   }
 }
+
+/* ************** flash message stuff ********************  */
+
+.flash__messages {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.flash {
+  max-width: 645px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flash > button {
+  background: none;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.flash > button:hover {
+  color: #ccc;
+}
+
+.flash__success {
+  background-color: rgb(100, 173, 94);
+  color: #fff;
+  border: 2px solid #fff;;
+}
+
+.flash__error {
+  background-color: rgb(226, 60, 107);
+  color: #fff;
+  border: 1px solid black; 
+}
+
+
 
 /* ****************** responsive stuff ******************************* */
 

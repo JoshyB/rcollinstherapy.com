@@ -1,5 +1,14 @@
 mixin contactForm()
 
+  //- if locals.flashes
+  //-  section.flash__messages
+  //-   -const categories = Object.keys(locals.flashes)
+  //-   each category in categories
+  //-     each message in flashes[category]
+  //-       .flash(class=`flash__${categry}`)
+  //-         p #{ message }
+  //-         button.flash__remove(onClick="this.parentElement.remove()") &times;
+
   section.contact__form
     form(action="/sendMail" method="POST")
       label(for="firstName") Your first name

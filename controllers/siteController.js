@@ -5,6 +5,7 @@ exports.homePage = (req, res) => {
     title: "Rebecca Collins, LISW",
     bg__imageClass: "navigation__bg1"
   });
+  req.flash("hello there, this is a message");
 };
 
 exports.aboutPage = (req, res) => {
@@ -36,11 +37,11 @@ exports.formDownloads = (req, res) => {
 };
 
 exports.services = (req, res) => {
-  res.render('services', {
+  res.render("services", {
     title: "services",
     bg__imageClass: "navigation__bg6"
-  })
-}
+  });
+};
 
 exports.sendMail = async (req, res) => {
   const msg = {
@@ -50,7 +51,13 @@ exports.sendMail = async (req, res) => {
     message: req.body.msg
   };
 
-  await mail.sendMail(msg);
-  // req.flash('success', "Thank you, your email was sent");
-  res.redirect('/contactMe');
+  const mailer = await mail.sendMail(msg);
+
+  if(mailer) {
+    req.flash('success', 'Thank you! Your message has been received 👍');
+    res.redirect('back');
+  } else {
+    req.flash('error', "Sorry there seems to have been a problem. Please try again later or give me a call.")
+    res.redirect('back');
+  }
 };

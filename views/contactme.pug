@@ -3,6 +3,14 @@ extends layout
 include mixins/_contactForm.pug
 
 block content
+  if locals.flashes
+   section.flash__messages
+    -const categories = Object.keys(locals.flashes)
+    each category in categories
+      each message in flashes[category]
+        .flash(class=`flash__${category}`)
+          p #{ message }
+          button.flash__remove(onClick="this.parentElement.remove()") &times;
   section.contact
     .contact__info 
       p.title__text 
