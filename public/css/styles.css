@@ -111,9 +111,9 @@ h6 {
       from(rgba(0, 0, 0, 0.3)),
       to(rgba(0, 0, 0, 0.3))
     ),
-    url("../images/crossroads.jpeg") center center;
+    url("../images/crossroads.jpeg") center 70%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/crossroads.jpeg") center center;
+    url("../images/crossroads.jpeg") center 70%;
   background-size: cover;
   top: 0;
   bottom: 0;
