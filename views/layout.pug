@@ -3,9 +3,12 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="Description" content=pageDescription)
+    meta(name="theme-color" content="#6c648b")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Rebecca Collins, LISW
     link(rel="stylesheet", href="./css/styles.css")
+    
 
   body
     nav.navigation(class=bg__imageClass)
@@ -34,6 +37,10 @@ html(lang="en")
       section.name
         if title
           h1 #{ title }
+        else if quote
+          .quote
+            p #{ quote.quote }
+            span &mdash;#{ quote.author}
         else
           img(src=titleIcon, alt="")
 
