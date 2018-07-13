@@ -1,6 +1,6 @@
 exports.quotes = [
   {
-    quote: "Had I not created my whole world. I would certainly have died in other people’s ",
+    quote: "Had I not created my whole world. I would certainly have died in other people’s. ",
     author: "Anais Nin"
   },
   {
@@ -8,7 +8,7 @@ exports.quotes = [
     author: "Anais Nin"
   },
   {
-    quote: "I must be a mermaid. I have no fear of depths, and a great fear of shallow living",
+    quote: "I must be a mermaid. I have no fear of depths, and a great fear of shallow living.",
     author: "Anais Nin"
   },
   {
@@ -20,11 +20,11 @@ exports.quotes = [
     author: "Robert Tew"
   },
   {
-    quote: "There's more room in a broken heart",
+    quote: "There's more room in a broken heart.",
     author: "Carly Simon"
   },
   {
-    quote: "Pain is inevitable, Suffering is optional",
+    quote: "Pain is inevitable, Suffering is optional.",
     author: "Haruki Murakami"
   },
 ]

@@ -3,11 +3,9 @@
 :root {
   --aqua: #6bbaa7;
   --button-color: #9191e9;
-  --granny-smith-apple: #9ee493;
   --lavender: #6c648b;
-  --eagle-green: #084c61;
   --lavender-pink: #f7accf;
-  --jelly-bean: #db504a;
+  --ube: #8B85C1;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -49,7 +47,7 @@ h6 {
 
 /* ************ some text styling *************** */
 
-.title__text {
+.title__text, .title__text> span {
   font-size: 3rem;
   margin: 0;
   color: var(--lavender-pink);
@@ -198,7 +196,7 @@ h6 {
   height: 100%;
   top: 0;
   right: 0;
-  background-color: var(--eagle-green);
+  background-color: var(--ube);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -266,6 +264,7 @@ h6 {
 .name h1 {
   font-size: 4rem;
   color: white;
+  text-shadow: 2px 2px #2d2d2d;
   -webkit-animation-name: fade-in;
   animation-name: fade-in;
   -webkit-animation-duration: 2.5s;
