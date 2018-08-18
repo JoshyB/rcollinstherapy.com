@@ -5,7 +5,7 @@
   --button-color: #9191e9;
   --lavender: #6c648b;
   --lavender-pink: #f7accf;
-  --ube: #8B85C1;
+  --ube: #8b85c1;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -47,7 +47,8 @@ h6 {
 
 /* ************ some text styling *************** */
 
-.title__text, .title__text> span {
+.title__text,
+.title__text > span {
   font-size: 3rem;
   margin: 0;
   color: var(--lavender-pink);
@@ -65,13 +66,14 @@ h6 {
 .navigation {
   width: 100%;
   position: relative;
-  height: 550px;
+  height: 350px;
 }
 
 /* ********************** Various hero images for each page/route ********************************* */
 
 .navigation__bg1 {
-  background: url("../images/tree_path.jpeg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/tree_path.jpeg") center center;
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -82,7 +84,8 @@ h6 {
 }
 
 .navigation__bg2 {
-  background: url("../images/forest_path2.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/forest_path2.jpg") center center;
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -93,7 +96,8 @@ h6 {
 }
 
 .navigation__bg3 {
-  background: url("../images/cool_tree.jpeg") center 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/cool_tree.jpeg") center 80%;
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -124,9 +128,9 @@ h6 {
 }
 
 .navigation__bg5 {
-  background: url("../images/forest_path.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/forest_path.jpg") center center;
   background-size: cover;
-  height: 520px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -139,7 +143,25 @@ h6 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/garden.jpeg") center 70%;
   background-size: cover;
-  height: 520px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+}
+.navigation__bg7 {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.3)),
+      to(rgba(0, 0, 0, 0.3))
+    ),
+    url("../images/creek.png") center 70%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/creek.png") center 70%;
+  background-size: cover;
   top: 0;
   bottom: 0;
   right: 0;
@@ -288,7 +310,7 @@ h6 {
   word-break: break-word;
   white-space: normal;
   font-size: 2.5rem;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-style: italic;
 }
 
@@ -347,6 +369,7 @@ h6 {
 
 .main__content {
   width: 100%;
+  padding: 100px 20px;
 }
 
 /* ****************** home page styling ******************** */
@@ -370,6 +393,7 @@ h6 {
   align-items: center;
   margin: 100px auto;
   background-image: url(/images/icons/quotes.svg);
+  text-shadow: 2px 2px #2d2d2d;
   background-position: center center;
   background-size: 300px 300px;
   background-repeat: no-repeat;
@@ -392,16 +416,15 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 20px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .rebecca__portrait {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 50%;
-  flex: 1 0 50%;
-  max-width: 600px;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 400px;
 }
 
 .rebecca__portrait img {
@@ -410,8 +433,9 @@ h6 {
 
 .about__rebecca {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 50%;
-  flex: 1 0 50%;
+  -ms-flex: 2;
+  flex: 2;
+  max-width: 40em;
 }
 
 .about__text {
@@ -427,7 +451,6 @@ h6 {
 
 .location {
   width: 100%;
-  padding: 100px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +494,7 @@ h6 {
 }
 
 .location__map {
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 .contact__details > .button {
@@ -492,7 +515,6 @@ h6 {
 
 .contact {
   width: 100%;
-  padding: 100px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,12 +650,27 @@ input::placeholder {
   width: 340px;
 }
 
+/* ********************About Sex Therapy******************************* */
+
+.howItWorks {
+  width: 80%;
+  margin: 40px auto;
+  word-break: break-word;
+  clear: both;
+}
+
+.intwined__image {
+  float: right;
+}
+
+.intwined__image img {
+  height: 300px;
+}
 /* ********************* Services *************************** */
 .services {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
 }
 
 .rates__container,

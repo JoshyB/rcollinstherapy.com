@@ -24,7 +24,9 @@ html(lang="en")
             li
               a(href="/aboutPage") about me
             li
-              a(href="/services") services
+              a(href="/aboutSexTherapy") About Sex therapy
+            li
+              a(href="/services") Appointment Info
             li
               a(href="/location") location
             li
@@ -37,10 +39,10 @@ html(lang="en")
       section.name
         if title
           h1 #{ title }
-        else if quote
-          .quote
-            p #{ quote.quote }
-            span &mdash;#{ quote.author}
+        //- else if quote
+        //-   .quote
+        //-     p #{ quote.quote }
+        //-     span &mdash;#{ quote.author}
         else
           img(src=titleIcon, alt="")
 
@@ -48,7 +50,8 @@ html(lang="en")
       .mobile__menu
         a.close__button(href="#") &times;
         a(href="/aboutPage") about me
-        a(href="/services") services
+        a(href="/aboutSexTherapy") About Sex therapy
+        a(href="/services") Appointment Info
         a(href="/location") location
         a(href="/formDownloads") forms
         a.mobile__button(href="/contactMe") contact me

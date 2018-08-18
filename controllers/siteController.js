@@ -3,14 +3,15 @@ const quote = require("../quotes");
 
 function getQuote() {
   //generate random integer between 0 and the length of the quotes array
-  const randomNum = Math.floor(Math.random() * quote.quotes.length)
-  return quote.quotes[randomNum]
-};
+  const randomNum = Math.floor(Math.random() * quote.quotes.length);
+  return quote.quotes[randomNum];
+}
 
 exports.homePage = (req, res) => {
   res.render("home", {
     title: "Rebecca Collins, LISW",
-    pageDescription: "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
+    pageDescription:
+      "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
     bg__imageClass: "navigation__bg1"
   });
 };
@@ -23,10 +24,15 @@ exports.aboutPage = (req, res) => {
   });
 };
 
+exports.aboutSexTherapy = (req, res) => {
+  res.render("aboutSexTherapy", { bg__imageClass: "navigation__bg7" });
+};
+
 exports.locationPage = (req, res) => {
   res.render("location", {
     bg__imageClass: "navigation__bg3",
-    pageDescription: "Location details, office hours, and contact information for Rebecca Collins, LISW",
+    pageDescription:
+      "Location details, office hours, and contact information for Rebecca Collins, LISW",
     quote: getQuote()
   });
 };
@@ -34,7 +40,8 @@ exports.locationPage = (req, res) => {
 exports.contactMe = (req, res) => {
   res.render("contactme", {
     quote: getQuote(),
-    pageDescription: "Rebecca Collins, LISW contact information, and contact form",
+    pageDescription:
+      "Rebecca Collins, LISW contact information, and contact form",
     bg__imageClass: "navigation__bg4"
   });
 };
@@ -65,11 +72,14 @@ exports.sendMail = async (req, res) => {
 
   const mailer = await mail.sendMail(msg);
 
-  if(mailer) {
-    req.flash('success', 'Thank you! Your message has been received 👍');
-    res.redirect('back');
+  if (mailer) {
+    req.flash("success", "Thank you! Your message has been received 👍");
+    res.redirect("back");
   } else {
-    req.flash('error', "Sorry there seems to have been a problem. Please try again later or give me a call.")
-    res.redirect('back');
+    req.flash(
+      "error",
+      "Sorry there seems to have been a problem. Please try again later or give me a call."
+    );
+    res.redirect("back");
   }
 };
