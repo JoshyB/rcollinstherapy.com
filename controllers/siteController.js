@@ -18,7 +18,6 @@ exports.homePage = (req, res) => {
 
 exports.aboutPage = (req, res) => {
   res.render("about", {
-    title: "About Rebecca",
     pageDescription: "A short biography on Rebecca Collins",
     bg__imageClass: "navigation__bg2"
   });
