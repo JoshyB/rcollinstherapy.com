@@ -453,6 +453,17 @@ h6 {
   color: var(--lavender-pink);
 }
 
+.mermaid__container {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mermaid__container img {
+  width: 600px;
+  margin: 0 auto;
+}
+
 /* ********************* location page styling ************************** */
 
 .location {
