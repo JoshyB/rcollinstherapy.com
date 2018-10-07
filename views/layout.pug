@@ -11,7 +11,7 @@ html(lang="en")
     
 
   body
-    nav.navigation(class=bg__imageClass)
+    nav.navigation
 
       .navigation__top__bar
 
@@ -21,44 +21,54 @@ html(lang="en")
 
         .navigation__menu
           ul
+            li  
+             a(href="/") home
             li
-              a(href="/aboutPage") about me
+              a(href="/areasOfTreatment") areas of treatment
             li
-              a(href="/aboutSexTherapy") About Sex therapy
+              a(href="/aboutSexTherapy") about Sex therapy
             li
-              a(href="/services") Appointment Info
+              a(href="/treatmentApproach") treatment approach
+            li
+              a(href="/appointmentInfo") appointment Info
             li
               a(href="/location") location
-            li
-              a(href="/formDownloads") forms
             li
               a.button(href="/contactMe") contact me
         a.open__button(href="#")
           img(src="./images/icons/open_icon.svg", alt="")
+
+
+    if heroImage
+      section.hero
+          img(src=heroImage, alt="")
+          section.name
+            if title
+              h1 #{ title }
+            if subTitle
+              h2 #{ subTitle }
+    if gallery
+      section.gallery
+        section.main-img
+          img(src="./images/office-pic2.jpg", alt="")
+          img(src="./images/office-pic.jpg", alt="")
+          
   
-      section.name
-        if title
-          h1 #{ title }
-        //- else if quote
-        //-   .quote
-        //-     p #{ quote.quote }
-        //-     span &mdash;#{ quote.author}
-        else
-          img(src=titleIcon, alt="")
 
     nav.mobile__navigation
       .mobile__menu
         a.close__button(href="#") &times;
-        a(href="/aboutPage") about me
-        a(href="/aboutSexTherapy") About Sex therapy
-        a(href="/services") Appointment Info
+        a(href="/") home
+        a(href="/areasOfTreatment") areas of treatment
+        a(href="/aboutSexTherapy") about Sex therapy
+        a(href="/treatmentApproach") treatment approach 
+        a(href="/appointmentInfo") appointment Info
         a(href="/location") location
-        a(href="/formDownloads") forms
         a.mobile__button(href="/contactMe") contact me
       
     section.main__content
       block content
 
     block scripts
-      script(src="./js/main.js")
+      script(defer src="./js/main.js")
       script(async defer src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&callback=makeMap`)

@@ -1,6 +1,7 @@
 extends layout
 
 include mixins/_contactForm.pug
+include mixins/_forms.pug
 
 block content
   if locals.flashes
@@ -28,3 +29,4 @@ block content
               use(xlink:href="./images/icons/clock.svg#clockIcon") 
           | 11:00am - 6:00pm Monday - Thursday       
     +contactForm()
+  +forms

@@ -2,10 +2,11 @@
 
 :root {
   --aqua: #6bbaa7;
+  --pale-aqua: hsl(180, 100%, 87%);
   --button-color: #9191e9;
   --lavender: #6c648b;
-  --lavender-pink: #f7accf;
   --ube: #8b85c1;
+  --robins-egg: #96ded1;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -21,18 +22,21 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  background-color: var(--lavender);
+  background-color: var(--robins-egg);
   overflow-x: hidden;
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 p {
   line-height: 2;
   font-size: 2rem;
-  color: #fff;
+  color: #333;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: var(--ube);
 }
 
 h1,
@@ -50,15 +54,14 @@ h6 {
 .title__text,
 .title__text > span {
   font-size: 3rem;
-  margin: 0;
-  color: var(--lavender-pink);
+  margin: 20px auto 0 auto;
+  color: #333;
 }
 
 .subtitle__text {
   font-size: 2rem;
   margin: 0;
   padding: 0;
-  color: #fff;
 }
 
 .center__texts {
@@ -70,113 +73,9 @@ h6 {
 
 .navigation {
   width: 100%;
-  position: relative;
-  height: 350px;
-}
-
-/* ********************** Various hero images for each page/route ********************************* */
-
-.navigation__bg1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/tree_path.jpeg") center center;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-
-.navigation__bg2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/forest_path2.jpg") center center;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-
-.navigation__bg3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/cool_tree.jpeg") center 80%;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-
-.navigation__bg4 {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.3)),
-      to(rgba(0, 0, 0, 0.3))
-    ),
-    url("../images/crossroads.jpeg") center 70%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/crossroads.jpeg") center 70%;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-
-.navigation__bg5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/forest_path.jpg") center center;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-
-.navigation__bg6 {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/garden.jpeg") center 70%;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
-}
-.navigation__bg7 {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.3)),
-      to(rgba(0, 0, 0, 0.3))
-    ),
-    url("../images/creek.jpg") center 70%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/creek.jpg") center 70%;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  display: block;
 }
 
 .navigation__top__bar {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,15 +106,15 @@ h6 {
 }
 
 .navigation__menu ul li a {
-  color: #fff;
-  font-size: 1.7rem;
-  margin: 12px;
+  font-size: 1.3rem;
+  margin: 5px;
   text-transform: uppercase;
   white-space: nowrap;
+  color: #333;
 }
 
 .navigation__menu ul li a:not(.button):hover {
-  color: #ddd;
+  color: #fff;
 }
 
 .mobile__navigation {
@@ -274,25 +173,61 @@ h6 {
   left: 70%;
 }
 
+/* ********************** Various hero images for each page/route ********************************* */
+
+.hero {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  border: 3px solid #fff;
+  width: 100%;
+}
+
+/* ***************** gallery in the location page ************************ */
+
+.gallery {
+  width: 100%;
+}
+
+.main-img {
+  width: 768px;
+  height: 430px;
+  margin: 0 auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.main-img img {
+  -webkit-animation: fade-in 2.5s;
+  animation: fade-in 2.5s;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  border: 3px solid #fff;
+}
+
 .name {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #fff;
 }
 
 .name h1 {
   font-size: 4.5rem;
-  color: white;
-  text-shadow: 2px 2px #2d2d2d;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.name h2 {
+  font-size: 3rem;
   -webkit-animation-name: fade-in;
   animation-name: fade-in;
   -webkit-animation-duration: 2.5s;
@@ -301,27 +236,6 @@ h6 {
 
 .name img {
   color: #fff;
-}
-.quote {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.quote > p,
-.quote > span {
-  color: #fff;
-  text-shadow: 2px 2px #2d2d2d;
-  max-width: 600px;
-  word-break: break-word;
-  white-space: normal;
-  font-size: 2.5rem;
-  font-family: "Courgette", cursive;
-  font-style: italic;
-}
-
-.quote span {
-  align-self: flex-end;
 }
 
 /* ******************** button styling ************************************* */
@@ -342,7 +256,7 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -378,45 +292,7 @@ h6 {
   padding: 100px 20px;
 }
 
-/* ****************** home page styling ******************** */
-
-.homepage__quote {
-  height: inherit;
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 100px auto;
-  background-image: url(/images/icons/quotes.svg);
-  text-shadow: 2px 2px #2d2d2d;
-  background-position: center center;
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-}
-
-.homepage__quote p {
-  max-width: 40em;
-  color: #fff;
-  font-size: 1.8rem;
-}
-
-.homepage__quote span {
-  color: #fff;
-  font-size: 2rem;
-}
-
-/* ******************** about page styling ***************************** */
+/* ******************** home page styling ***************************** */
 
 .about {
   display: -webkit-box;
@@ -450,7 +326,7 @@ h6 {
 }
 
 .about__text span {
-  color: var(--lavender-pink);
+  color: var(title-text);
 }
 
 .mermaid__container {
@@ -464,6 +340,13 @@ h6 {
   margin: 0 auto;
 }
 
+/* ****************** areas of treatment ************************* */
+
+.areas-of-treatment {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* ********************* location page styling ************************** */
 
 .location {
@@ -473,18 +356,7 @@ h6 {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.office__picture {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 33%;
-  flex: 1 0 33%;
-  width: 300px;
-}
-
-.office__picture > img {
-  width: 100%;
+  justify-content: space-evenly;
 }
 
 .location__details {
@@ -561,7 +433,7 @@ h6 {
 }
 
 .contact__info > p > span {
-  color: var(--lavender-pink);
+  color: var(title-text);
   margin-right: 10px;
 }
 
@@ -630,10 +502,13 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 40px;
+  margin-top: 50px;
+  padding: 100px 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
 }
 
 .form__instructions {
@@ -644,7 +519,7 @@ input::placeholder {
 }
 
 .form__instructions > span a {
-  color: var(--lavender-pink);
+  color: var(title-text);
   font-size: 2rem;
 }
 
@@ -676,58 +551,30 @@ input::placeholder {
   clear: both;
 }
 
-.intwined__image {
-  float: right;
+.howItWorks ul li {
+  margin: 5px auto;
+  font-size: 1.8rem;
 }
 
-.intwined__image img {
-  height: 300px;
-}
+/* **************** treatment approach ******************** */
 
-.your__authentic__Sexual__self {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.heart__container {
-  width: 100%;
-  text-align: center;
-  margin: 100px 0;
-}
-
-.sexual__self__text {
+.treatmentApproach {
   width: 80%;
   margin: 40px auto;
-  word-break: break-word;
 }
 
-/* ********************* Services *************************** */
-.services {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.credentials {
+  margin-top: 20px;
 }
 
-.rates__container,
-.insurance__container,
-.specialities__container,
-.issues__container,
-.mental__health__container,
-.sexuality__container {
+.appointmentInfo {
   width: 80%;
   margin: 40px auto;
-  word-break: break-word;
 }
 
-.text__column {
-  float: left;
-  white-space: nowrap;
-  color: #fff;
-  font-size: 2rem;
-}
-
-.text__column ul li {
-  margin: 15px 0;
+.insurance ul li {
+  margin: 5px auto;
+  font-size: 1.8rem;
 }
 
 /* ***************** animations *************************** */
@@ -753,19 +600,52 @@ de-in {
   }
 }
 
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 2.5s;
+  animation: fade-in 2.5s;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 2.5s;
+  animation: fade-out 2.5s;
+}
+
 /* ************** flash message stuff ********************  */
 
 .flash__messages {
   width: 100%;
-  margin-top: 50px;
 }
 
 .flash {
   max-width: 645px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -847,7 +727,12 @@ de-in {
 
   /* this is for the form donload page. not the actual CONTACT FROM */
   .forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -855,6 +740,13 @@ de-in {
     width: 90%;
     max-width: 90%;
     margin-bottom: 30px;
+  }
+
+  .text__with__image__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -866,6 +758,13 @@ de-in {
   .quote p,
   span {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-img {
+    width: 568px;
+    height: 230px;
   }
 }
 
@@ -885,10 +784,18 @@ de-in {
   .location__details > div {
     margin: 10px;
   }
+
+  .main-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
   .name h1 {
     font-size: 3rem;
+  }
+
+  .main-img {
+    width: 100%;
   }
 }

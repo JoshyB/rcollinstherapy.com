@@ -10,26 +10,30 @@ function getQuote() {
 exports.homePage = (req, res) => {
   res.render("home", {
     title: "Rebecca Collins, LISW",
+    subTitle: "Sex and Relationship Therapist",
     pageDescription:
       "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
-    bg__imageClass: "navigation__bg1"
+    heroImage: "./images/tree_path.jpeg"
   });
 };
 
-exports.aboutPage = (req, res) => {
-  res.render("about", {
-    pageDescription: "A short biography on Rebecca Collins",
-    bg__imageClass: "navigation__bg2"
+exports.areasOfTreatment = (req, res) => {
+  res.render("areasOfTreatment", {
+    heroImage: "./images/creek.jpg"
   });
 };
 
 exports.aboutSexTherapy = (req, res) => {
-  res.render("aboutSexTherapy", { bg__imageClass: "navigation__bg7" });
+  res.render("aboutSexTherapy", { heroImage: "./images/polar_bears.jpeg" });
+};
+
+exports.treatmentApproach = (req, res) => {
+  res.render("treatmentApproach", { heroImage: "./images/forest_path.jpg" });
 };
 
 exports.locationPage = (req, res) => {
   res.render("location", {
-    bg__imageClass: "navigation__bg3",
+    gallery: true,
     pageDescription:
       "Location details, office hours, and contact information for Rebecca Collins, LISW",
     quote: getQuote()
@@ -40,24 +44,15 @@ exports.contactMe = (req, res) => {
   res.render("contactme", {
     quote: getQuote(),
     pageDescription:
-      "Rebecca Collins, LISW contact information, and contact form",
-    bg__imageClass: "navigation__bg4"
+      "Rebecca Collins, LISW contact information, and contact form"
   });
 };
 
-exports.formDownloads = (req, res) => {
-  res.render("forms", {
-    quote: getQuote(),
-    pageDescription: "Rebecca Collins, LISW intake forms and policies",
-    bg__imageClass: "navigation__bg5"
-  });
-};
-
-exports.services = (req, res) => {
-  res.render("services", {
+exports.appointmentInfo = (req, res) => {
+  res.render("appointmentInfo", {
     quote: getQuote(),
     pageDescription: "Services that Rebecca Collins, LISW offers",
-    bg__imageClass: "navigation__bg6"
+    heroImage: "./images/forest_path2.jpg"
   });
 };
 

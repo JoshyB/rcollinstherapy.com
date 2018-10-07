@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="clockIcon">
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
     <title>clock</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-89.000000, -25.000000)">
-            <g id="clock" transform="translate(89.000000, 25.000000)">
-                <path d="M10.9501163,0.16755814 C4.95230233,0.16755814 0.0903023259,5.02981395 0.0903023259,11.0276279 C0.0903023259,17.0254418 4.95230233,21.8876977 10.9501163,21.8876977 C16.9479302,21.8876977 21.810186,17.0254418 21.810186,11.0276279 C21.810186,5.02981395 16.9479302,0.16755814 10.9501163,0.16755814 Z M10.9501163,20.9537209 C5.46802326,20.9537209 1.02402326,16.5097209 1.02402326,11.0276279 C1.02402326,5.54553489 5.46802326,1.1017907 10.9501163,1.1017907 C16.4322093,1.1017907 20.8762093,5.54579069 20.8762093,11.0278837 C20.8762093,16.5099767 16.4319535,20.9537209 10.9501163,20.9537209 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
-                <g id="Group" transform="translate(1.790698, 10.744186)" stroke-width="0.5" stroke="#FFFFFF">
-                    <rect id="Rectangle-path" x="0.167046512" y="0.109744186" width="1.28162791" height="1"></rect>
-                    <rect id="Rectangle-path" x="16.869907" y="0.109744186" width="1.28137209" height="1"></rect>
-                </g>
-                <g id="Group" transform="translate(10.744186, 1.790698)" stroke-width="0.5" stroke="#FFFFFF">
-                    <rect id="Rectangle-path" x="0.0322325582" y="16.9476744" width="1" height="1.28137209"></rect>
-                    <rect id="Rectangle-path" x="0.0322325582" y="0.245069767" width="1" height="1.28137209"></rect>
-                </g>
-                <g id="Group" transform="translate(3.798837, 4.348837)" stroke="#FFFFFF" stroke-width="0.5">
-                    <rect id="Rectangle-path" transform="translate(1.177647, 12.503169) rotate(-135.000000) translate(-1.177647, -12.503169) " x="0.902647292" y="11.8622331" width="1" height="1.28187143"></rect>
-                    <rect id="Rectangle-path" transform="translate(12.981468, 0.711520) rotate(-135.000000) translate(-12.981468, -0.711520) " x="12.7064683" y="0.0708404118" width="1" height="1.28135981"></rect>
-                </g>
-                <g id="Group" transform="translate(4.348837, 4.348837)" stroke="#FFFFFF" stroke-width="0.5">
-                    <rect id="Rectangle-path" transform="translate(12.568645, 12.509339) rotate(-134.991897) translate(-12.568645, -12.509339) " x="11.9278375" y="12.2343386" width="1.28161563" height="1"></rect>
-                    <rect id="Rectangle-path" transform="translate(0.776836, 0.705448) rotate(-135.016206) translate(-0.776836, -0.705448) " x="0.136156148" y="0.430448272" width="1.28135985" height="1"></rect>
-                </g>
-                <path d="M15.1927907,11.1606512 L11.4034186,11.1606512 C11.3499535,10.9826047 11.2054186,10.8444651 11.0222558,10.8027674 L11.0222558,4.58444186 L10.7664418,4.58444186 L10.7664418,10.8104418 C10.5469535,10.8718372 10.3852791,11.0711163 10.3852791,11.3100465 C10.3852791,11.44 10.4343953,11.5574186 10.513186,11.6484884 L5.9617442,16.0006511 L6.0502558,16.093 L10.6073256,11.7357209 C10.6922558,11.7955814 10.795093,11.8313953 10.9066279,11.8313953 C11.1578372,11.8313953 11.3678605,11.6533489 11.4169767,11.4164651 L15.1927907,11.4164651 L15.1927907,11.1606512 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <g id="clock">
+            <path d="M10.9501163,0.16755814 C4.95230233,0.16755814 0.0903023259,5.02981395 0.0903023259,11.0276279 C0.0903023259,17.0254418 4.95230233,21.8876977 10.9501163,21.8876977 C16.9479302,21.8876977 21.810186,17.0254418 21.810186,11.0276279 C21.810186,5.02981395 16.9479302,0.16755814 10.9501163,0.16755814 Z M10.9501163,20.9537209 C5.46802326,20.9537209 1.02402326,16.5097209 1.02402326,11.0276279 C1.02402326,5.54553489 5.46802326,1.1017907 10.9501163,1.1017907 C16.4322093,1.1017907 20.8762093,5.54579069 20.8762093,11.0278837 C20.8762093,16.5099767 16.4319535,20.9537209 10.9501163,20.9537209 Z" id="Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
+            <g id="Group" transform="translate(1.790698, 10.744186)" stroke-width="0.5" stroke="#4A4A4A">
+                <rect id="Rectangle-path" x="0.167046512" y="0.109744186" width="1.28162791" height="1"></rect>
+                <rect id="Rectangle-path" x="16.869907" y="0.109744186" width="1.28137209" height="1"></rect>
             </g>
+            <g id="Group" transform="translate(10.744186, 1.790698)" stroke-width="0.5" stroke="#4A4A4A">
+                <rect id="Rectangle-path" x="0.0322325582" y="16.9476744" width="1" height="1.28137209"></rect>
+                <rect id="Rectangle-path" x="0.0322325582" y="0.245069767" width="1" height="1.28137209"></rect>
+            </g>
+            <g id="Group" transform="translate(3.798837, 3.348837)" stroke="#4A4A4A" stroke-width="0.5">
+                <rect id="Rectangle-path" transform="translate(1.018548, 13.344070) rotate(-135.000000) translate(-1.018548, -13.344070) " x="0.518547637" y="12.7031342" width="1" height="1.28187143"></rect>
+                <rect id="Rectangle-path" transform="translate(12.822369, 1.552421) rotate(-135.000000) translate(-12.822369, -1.552421) " x="12.322369" y="0.911740633" width="1" height="1.28135981"></rect>
+            </g>
+            <g id="Group" transform="translate(4.348837, 3.348837)" stroke="#4A4A4A" stroke-width="0.5">
+                <rect id="Rectangle-path" transform="translate(12.727766, 13.350263) rotate(-134.991897) translate(-12.727766, -13.350263) " x="12.0869582" y="12.8502625" width="1.28161563" height="1"></rect>
+                <rect id="Rectangle-path" transform="translate(0.935890, 1.546304) rotate(-135.016206) translate(-0.935890, -1.546304) " x="0.295210234" y="1.04630374" width="1.28135985" height="1"></rect>
+            </g>
+            <path d="M15.1927907,11.1606512 L11.4034186,11.1606512 C11.3499535,10.9826047 11.2054186,10.8444651 11.0222558,10.8027674 L11.0222558,4.58444186 L10.7664418,4.58444186 L10.7664418,10.8104418 C10.5469535,10.8718372 10.3852791,11.0711163 10.3852791,11.3100465 C10.3852791,11.44 10.4343953,11.5574186 10.513186,11.6484884 L5.9617442,16.0006511 L6.0502558,16.093 L10.6073256,11.7357209 C10.6922558,11.7955814 10.795093,11.8313953 10.9066279,11.8313953 C11.1578372,11.8313953 11.3678605,11.6533489 11.4169767,11.4164651 L15.1927907,11.4164651 L15.1927907,11.1606512 Z" id="Shape" fill="#4A4A4A" fill-rule="nonzero"></path>
         </g>
     </g>
 </svg>

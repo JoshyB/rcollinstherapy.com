@@ -1,6 +1,5 @@
-extends layout
+mixin forms()
 
-block content
   sections.forms
     .form__instructions
        p Please complete the following forms prior to your first visit. You may either print them off, fill them out and bring them with you. Or you can email them to me at 
@@ -11,7 +10,7 @@ block content
         li
           a.button(href="./forms/client_information.docx") Client Information (docx)
         li
-          a.button(href="./forms/client_form.docx") Consent for Treatment (docx)
+          a.button(href="./forms/consent_form.docx") Consent for Treatment (docx)
         li
           a.button(href="./forms/payment_agreement.docx") Payment Agreement (docx)
         

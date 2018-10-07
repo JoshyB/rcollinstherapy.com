@@ -2,14 +2,12 @@ extends layout
 
 block content
   section.location
-    .office__picture
-      img(src="./images/officePic.jpg", alt="A cozy office with amber lighting and lots of plants")
     .location__details
       .address
         p.title__text
           span
             svg(width="22px", height="22px")
-              use(xlink:href="./images/icons/pin.svg#pinIcon") 
+              use(xlink:href="./images/icons/pin.svg#pin") 
           | Address      
         p.subtitle__text 4041 N. High Street 
         p.subtitle__text Suite 203E 
@@ -18,14 +16,14 @@ block content
         p.title__text
           span
             svg(width="22px", height="22px")
-              use(xlink:href="./images/icons/clock.svg#clockIcon") 
+              use(xlink:href="./images/icons/clock.svg#clock") 
           | Hours
         p.subtitle__text 11:00am - 6:00pm Monday - Thursday
       .contact__details
         p.title__text
           span
             svg(width="22px", height="22px")
-              use(xlink:href="./images/icons/phone.svg#phoneIcon") 
+              use(xlink:href="./images/icons/phone.svg#phone") 
           | Contact      
         p.subtitle__text 614 - 725 - 1165
         a.button(href="/contactMe") Contact Me

@@ -4,12 +4,12 @@ const siteController = require("../controllers/siteController");
 
 //get homepage
 router.get("/", siteController.homePage);
-router.get("/aboutPage", siteController.aboutPage);
+router.get("/areasOfTreatment", siteController.areasOfTreatment);
+router.get("/treatmentApproach", siteController.treatmentApproach);
 router.get("/aboutSexTherapy", siteController.aboutSexTherapy);
 router.get("/location", siteController.locationPage);
 router.get("/contactMe", siteController.contactMe);
-router.get("/formDownloads", siteController.formDownloads);
-router.get("/services", siteController.services);
+router.get("/appointmentInfo", siteController.appointmentInfo);
 
 //contact form post request
 router.post("/sendMail", siteController.sendMail);
