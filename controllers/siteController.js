@@ -13,36 +13,35 @@ exports.homePage = (req, res) => {
     subTitle: "Sex and Relationship Therapist",
     pageDescription:
       "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
-    heroImage: "./images/tree_path.jpeg"
+    heroImage: "./new/stonehenge.jpg"
   });
 };
 
 exports.areasOfTreatment = (req, res) => {
   res.render("areasOfTreatment", {
-    heroImage: "./images/creek.jpg"
+    heroImage: "./new/connected.jpg"
   });
 };
 
 exports.aboutSexTherapy = (req, res) => {
-  res.render("aboutSexTherapy", { heroImage: "./images/polar_bears.jpeg" });
+  res.render("aboutSexTherapy", { heroImage: "./new/lions.jpg" });
 };
 
 exports.treatmentApproach = (req, res) => {
-  res.render("treatmentApproach", { heroImage: "./images/forest_path.jpg" });
+  res.render("treatmentApproach", { heroImage: "./new/human.jpg" });
 };
 
 exports.locationPage = (req, res) => {
   res.render("location", {
     gallery: true,
     pageDescription:
-      "Location details, office hours, and contact information for Rebecca Collins, LISW",
-    quote: getQuote()
+      "Location details, office hours, and contact information for Rebecca Collins, LISW"
   });
 };
 
 exports.contactMe = (req, res) => {
   res.render("contactme", {
-    quote: getQuote(),
+    heroImage: "./images/mermaid.jpg",
     pageDescription:
       "Rebecca Collins, LISW contact information, and contact form"
   });
@@ -50,9 +49,8 @@ exports.contactMe = (req, res) => {
 
 exports.appointmentInfo = (req, res) => {
   res.render("appointmentInfo", {
-    quote: getQuote(),
     pageDescription: "Services that Rebecca Collins, LISW offers",
-    heroImage: "./images/forest_path2.jpg"
+    heroImage: "./new/waterfall.jpg"
   });
 };
 
