@@ -13,22 +13,22 @@ exports.homePage = (req, res) => {
     subTitle: "Sex and Relationship Therapist",
     pageDescription:
       "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
-    heroImage: "./new/stonehenge.jpg"
+    heroImage: "./images/stonehenge.jpg"
   });
 };
 
 exports.areasOfTreatment = (req, res) => {
   res.render("areasOfTreatment", {
-    heroImage: "./new/connected.jpg"
+    heroImage: "./images/connected.jpg"
   });
 };
 
 exports.aboutSexTherapy = (req, res) => {
-  res.render("aboutSexTherapy", { heroImage: "./new/lions.jpg" });
+  res.render("aboutSexTherapy", { heroImage: "./images/lions.jpg" });
 };
 
 exports.treatmentApproach = (req, res) => {
-  res.render("treatmentApproach", { heroImage: "./new/human.jpg" });
+  res.render("treatmentApproach", { heroImage: "./images/human.jpg" });
 };
 
 exports.locationPage = (req, res) => {
@@ -50,7 +50,7 @@ exports.contactMe = (req, res) => {
 exports.appointmentInfo = (req, res) => {
   res.render("appointmentInfo", {
     pageDescription: "Services that Rebecca Collins, LISW offers",
-    heroImage: "./new/waterfall.jpg"
+    heroImage: "./images/worry.jpg"
   });
 };
 

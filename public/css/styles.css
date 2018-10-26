@@ -216,7 +216,7 @@ h6 {
   text-align: center;
   top: 30%;
   color: #fff;
-  text-shadow: 2px 3px 2px rgba(0,0,0,0.3);
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .name h1 {
@@ -581,6 +581,15 @@ input::placeholder {
 .appointmentInfo {
   width: 80%;
   margin: 40px auto;
+  clear: both;
+}
+
+.payment {
+  /* clear: both; */
+}
+.imageFloatRight {
+  float: right;
+  width: 50%;
 }
 
 .insurance ul li {
@@ -764,7 +773,6 @@ de-in {
 }
 
 @media (max-width: 900px) {
-  
 }
 
 @media (max-width: 768px) {
@@ -805,4 +813,3 @@ de-in {
     width: 100%;
   }
 }
-c
