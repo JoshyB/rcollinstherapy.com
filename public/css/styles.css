@@ -581,15 +581,16 @@ input::placeholder {
 .appointmentInfo {
   width: 80%;
   margin: 40px auto;
-  clear: both;
 }
 
 .payment {
-  /* clear: both; */
+  clear: both;
 }
 .imageFloatRight {
   float: right;
-  width: 50%;
+  width: 35%;
+  max-width: 450px;
+  margin-left: 30px;
 }
 
 .insurance ul li {
@@ -769,6 +770,10 @@ de-in {
   }
   .hero {
     width: 80%;
+  }
+
+  .imageFloatRight {
+    display: none;
   }
 }
 

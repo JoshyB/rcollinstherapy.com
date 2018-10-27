@@ -33,23 +33,18 @@ try {
   //do nothing
 }
 
-// try and catch since the map element only exists on one page.
-try {
-  // initialize google maps for the locations page;
-  const mapView = document.getElementById("map");
+// initialize google maps for the locations page;
+const mapView = document.getElementById("map");
 
-  function makeMap() {
-    if (!mapView) return; //if there is no map div on the page...move along
-    const rebeccasOffice = { lat: 40.044, lng: -83.019 };
-    const map = new google.maps.Map(mapView, {
-      zoom: 16,
-      center: rebeccasOffice
-    });
-    const marker = new google.maps.Marker({
-      position: rebeccasOffice,
-      map: map
-    });
-  }
-} catch (error) {
-  // do nothing
+function initMap() {
+  if (!mapView) return; //if there is no map div on the page...move along
+  const rebeccasOffice = { lat: 40.044, lng: -83.019 }; // The lat and lng of Rebecca's office
+  const map = new google.maps.Map(mapView, {
+    zoom: 16,
+    center: rebeccasOffice
+  });
+  const marker = new google.maps.Marker({
+    position: rebeccasOffice,
+    map: map
+  });
 }
