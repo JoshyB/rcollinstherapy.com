@@ -6,6 +6,8 @@ html(lang="en")
     meta(name="Description" content=pageDescription)
     meta(name="theme-color" content="#6c648b")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(property='og:image', content='./images/rebecca.jpg')
+    link(rel="icon" type="image/ico" href="./images/icons/favicon.ico")
     title Rebecca Collins, LISW
     link(rel="stylesheet", href="./css/styles.css")
     
@@ -17,7 +19,7 @@ html(lang="en")
 
         .navigation__logo
           a(href="/")
-            img(src="./images/logo.png", alt="spiral mosaic art work")
+            img(src="./images/logo.jpg", alt="spiral mosaic art work")
 
         .navigation__menu
           ul
@@ -40,13 +42,23 @@ html(lang="en")
 
 
     if heroImage
+      section.name
+        if title
+          h1 #{ title }
       section.hero
           img(src=heroImage, alt="")
-          section.name
-            if title
-              h1 #{ title }
-            if subTitle
-              h2 #{ subTitle }
+      section.credit
+        if credit
+          p Jaclyn Atkinson | 
+            span
+              a(href="https://newjacktale.com/home.html") anewjacktale.com   
+            | | prints available at 
+            span
+              a(href="https://society6.com/newjacktale") society6.com/newjacktale  
+              | |
+            span
+              a(href="https://www.instagram.com/cadillacjac/")  @cadillacjac
+           
     if gallery
       section.gallery
         section.main-img

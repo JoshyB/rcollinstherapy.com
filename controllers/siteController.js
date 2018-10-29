@@ -9,8 +9,7 @@ function getQuote() {
 
 exports.homePage = (req, res) => {
   res.render("home", {
-    title: "Rebecca Collins, LISW",
-    subTitle: "Sex and Relationship Therapist",
+    title: "Rebecca Collins, LISW-S",
     pageDescription:
       "This is the landing page for RCollinstherapy.com. Rebecca Collins, LISW is a sex therapist located in Columbus, Ohio",
     heroImage: "./images/stonehenge.jpg"
@@ -42,6 +41,7 @@ exports.locationPage = (req, res) => {
 exports.contactMe = (req, res) => {
   res.render("contactme", {
     heroImage: "./images/mermaid.jpg",
+    credit: true,
     pageDescription:
       "Rebecca Collins, LISW contact information, and contact form"
   });
