@@ -683,12 +683,14 @@ de-in {
 }
 
 .flash__success {
+  margin: 30px auto;
   background-color: rgb(100, 173, 94);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .flash__error {
+  margin: 30px auto;
   background-color: rgb(226, 60, 107);
   color: #fff;
   border: 1px solid black;
