@@ -2,11 +2,11 @@
 
 :root {
   --aqua: #6bbaa7;
-  --pale-aqua: hsl(180, 100%, 87%);
+  --pale-aqua: rgb(10, 138, 138);
   --button-color: #9191e9;
   --lavender: #6c648b;
   --ube: #8b85c1;
-  --robins-egg: #96ded1;
+  --robins-egg: RGB(129, 212, 236);
 }
 * {
   -webkit-box-sizing: border-box;
