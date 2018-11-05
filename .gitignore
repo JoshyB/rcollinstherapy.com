@@ -4,3 +4,4 @@ node_modules/
 .DS_Store
 *.log
 webpack.config.js
+rebeccasIcons.sketch
