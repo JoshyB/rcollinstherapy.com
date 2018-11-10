@@ -203,6 +203,7 @@ h6 {
 
 .gallery {
   width: 100%;
+  text-align: center;
 }
 
 .main-img {
@@ -227,7 +228,7 @@ h6 {
   text-align: center;
   color: #333;
   margin: 20px auto;
-  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .name h1 {
@@ -422,6 +423,8 @@ h6 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -429,6 +432,12 @@ h6 {
 .contact__info {
   white-space: nowrap;
   margin-bottom: 50px;
+  width: 100%;
+}
+
+.contact__text {
+  max-width: 645px;
+  margin: 0 auto;
 }
 
 .contact__form {

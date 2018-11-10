@@ -14,19 +14,20 @@ block content
           button.flash__remove(onClick="this.parentElement.remove()") &times;
   section.contact
     .contact__info 
-      p.title__text 
-        span Rebecca Collins,
-        | LISW
-      p.subtitle__text
-        span
-          svg(width="22px", height="22px")
-              use(xlink:href="./images/icons/phone.svg#phone")
-        |614 - 725 - 1165
-      .hours
+      .contact__text
+        p.title__text 
+          span Rebecca Collins,
+          | LISW
         p.subtitle__text
           span
             svg(width="22px", height="22px")
-              use(xlink:href="./images/icons/clock.svg#clock") 
-          | 11:00am - 6:00pm Monday - Thursday       
+                use(xlink:href="./images/icons/phone.svg#phone")
+          |614 - 725 - 1165
+        .hours
+          p.subtitle__text
+            span
+              svg(width="22px", height="22px")
+                use(xlink:href="./images/icons/clock.svg#clock") 
+            | 11:00am - 6:00pm Monday - Thursday       
     +contactForm()
   +forms
