@@ -4,7 +4,7 @@ exports.sendMail = function(mail) {
   sgMail.setApiKey(process.env.SG_KEY);
 
   const message = {
-    to: "collinsr.therapy@gmail.com",
+    to: process.env.EMAIL,
     from: mail.email,
     subject: `A message from ${mail.firstName} ${
       mail.lastName
