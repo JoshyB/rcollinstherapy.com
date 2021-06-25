@@ -18,22 +18,22 @@ openBtn.addEventListener("click", () => {
 // will cease to work
 var slideIndex = 0;
 
-const galleryImages = document.querySelectorAll(".main-img img");
+// const galleryImages = document.querySelectorAll(".main-img img");
 
-if (galleryImages) {
-  slideShow();
-  function slideShow() {
-    for (var i = 0; i < galleryImages.length; i++) {
-      galleryImages[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > galleryImages.length) {
-      slideIndex = 1;
-    }
-    galleryImages[slideIndex - 1].style.display = "block";
-    setTimeout(slideShow, 4000);
-  }
-}
+// if (galleryImages) {
+//   slideShow();
+//   function slideShow() {
+//     for (var i = 0; i < galleryImages.length; i++) {
+//       galleryImages[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if (slideIndex > galleryImages.length) {
+//       slideIndex = 1;
+//     }
+//     galleryImages[slideIndex - 1].style.display = "block";
+//     setTimeout(slideShow, 4000);
+//   }
+// }
 
 // initialize google maps for the locations page;
 const mapView = document.getElementById("map");
