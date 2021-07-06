@@ -836,6 +836,14 @@ input::placeholder {
     width: 568px;
     height: 230px;
   }
+
+  .block-text {
+    width: 100%;
+  }
+
+  .contact-row {
+    width: 100%;
+  }
 }
 
 @media (max-width: 568px) {
