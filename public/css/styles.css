@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Courgette');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab|Courgette");
 
 :root {
   --aqua: #6bbaa7;
@@ -15,7 +15,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -46,7 +46,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
 }
 
 /* ************ some text styling *************** */
@@ -272,6 +272,7 @@ h6 {
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
+  border: none;
 }
 
 .button:hover {
@@ -555,7 +556,7 @@ input::placeholder {
 }
 
 .forms:before {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   width: 60%;
